@@ -164,29 +164,27 @@
                 <form action="index.html">
 
                     <div>
-                        <button type="reset">
-                            <span>Reset form</span>
-                        </button>
+                        <input type="reset" value="Reset form">
                     </div>
 
                     <label>
                         <span>Name:</span>
-                        <input type="text" name="name">
+                        <input type="text" name="name" required>
                     </label>
 
                     <label>
                         <span>Phone:</span>
-                        <input type="tel" name="phone">
+                        <input type="tel" name="phone" required>
                     </label>
 
                     <label>
                         <span>Email:</span>
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
                     </label>
 
                     <label>
                         <span>Subject:</span>
-                        <select name="subject">
+                        <select name="subject" required>
                             <option selected disabled value="">Choose Subject</option>    
                             <option value="Unplugging from the Matrix">🕶️ Unplugging from the Matrix 💾</option>
                             <option value="Casting Spells and Potions Class">🧙‍♂️ Casting Spells and Potions Class 🪄</option>
@@ -197,12 +195,10 @@
 
                     <label>
                         <span>Message:</span>
-                        <textarea name="message" cols="30" rows="10"></textarea>
+                        <textarea name="message" cols="30" rows="10" required></textarea>
                     </label>
 
-                    <button type="submit">
-                        <span>Submit</span>
-                    </button>
+                    <input type="submit" value="Submit">
 
                 </form>
 
